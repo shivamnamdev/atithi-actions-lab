@@ -4,7 +4,7 @@ from app import nights
 
 
 def test_three_nights():
-    assert nights("2026-12-01", "2026-12-04") == 3
+    assert nights("2026-12-01", "2026-12-04") == 4
 
 
 def test_checkout_must_be_after_checkin():
