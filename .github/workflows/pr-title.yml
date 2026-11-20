@@ -5,10 +5,6 @@ permissions:
   contents: read
 
 jobs:
-  unsafe:   # DO NOT COPY: text from the pull request is pasted into the shell command
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "title is ${{ github.event.pull_request.title }}"
   safe:     # the right way: outside text goes into an environment variable, the shell only sees data
     runs-on: ubuntu-latest
     steps:
